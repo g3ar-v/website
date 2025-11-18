@@ -131,6 +131,7 @@ body.show-grid::before {
     align-items: flex-start;
     max-width: 680px;
     margin-inline: auto;
+    margin-top: 30%;
     /* padding-left: 1%; */
 }
 
