@@ -1,0 +1,57 @@
+/* Portfolio grid layout */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 360px;
+    background: #343434 no-repeat center center / cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.card__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 16px 20px;
+    z-index: 1;
+}
+
+.card__title {
+    margin: 0 0 6px 0;
+    font-weight: 500;
+}
+
+.card__date {
+    margin: 0 0 12px 0;
+    color: #b98929;
+    font-weight: 500;
+}
+
+.card__desc {
+    margin: 0 0 12px 0;
+}
+
+.card__link {
+    color: #D8C9AF;
+    font-weight: 500;
+}
