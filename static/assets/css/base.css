@@ -94,7 +94,7 @@ body.show-grid::before {
 
 .social a {
     color: var(--fg);
-    margin-left: 14px
+    margin-left: 12px
 }
 
 .social i {
@@ -246,8 +246,8 @@ body.show-grid::before {
 }
 
 .project-title {
-    position: sticky;
-    top: 120px;
+    position: relative;
+    top: 170px;
     align-self: flex-start;
     grid-column: 1;
     font-family: "Helvetica", "Plus Jakarta Sans", serif;
@@ -280,6 +280,7 @@ body.show-grid::before {
 
 .project-item {
     position: relative;
+    top: 50px;
     display: flex;
     flex-direction: column;
     background: #f8f8f8;
@@ -371,7 +372,7 @@ body.show-grid::before {
     gap: 8px;
     text-decoration: none;
     font-weight: 600;
-    color: var(--fg);
+    color: #87A0BE;
     margin-top: auto;
 }
 
