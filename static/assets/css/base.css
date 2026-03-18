@@ -43,7 +43,8 @@ body.show-grid::before {
 .page {
     min-height: 100vh;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -134,14 +135,14 @@ body.show-grid::before {
 /* Main area */
 .main {
     position: relative;
-    min-height: calc(100vh - 64px);
+    min-height: 100vh;
     /* padding: 40px 24px 0px; */
 }
 
 /* Hero component */
 .hero {
     position: relative;
-    min-height: calc(100vh - 64px);
+    height: 100vh;
     display: grid;
     grid-template-columns: 1.5fr minmax(320px, 680px) 1fr;
     align-items: start;
@@ -216,7 +217,7 @@ body.show-grid::before {
 
 .hero-image {
     position: absolute;
-    bottom: -2%;
+    bottom: 0;
     left: 0%;
     align-self: start;
     justify-self: end;
@@ -259,23 +260,26 @@ body.show-grid::before {
 /* Portfolio section */
 .projects {
     position: relative;
+    margin-top: 0;
     min-height: 100vh;
     padding: clamp(48px, 8vw, 120px) clamp(24px, 8vw, 120px) clamp(64px, 10vw, 160px);
-    display: flex;
-    align-items: flex-start;
-    grid-template-columns: minmax(220px, 320px) 1fr;
+    display: grid;
+    align-items: start;
+    grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
     gap: clamp(32px, 6vw, 120px);
     /* border-bottom: 2px solid var(--alternate-fg); */
     /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), transparent); */
+    background: #0b0b0b;
+    color: var(--bg);
 }
 
 .project-title {
     position: relative;
-    top: 170px;
+    top: 0;
     align-self: flex-start;
     grid-column: 1;
     font-family: "Helvetica", "Plus Jakarta Sans", serif;
-    font-size: clamp(32px, 7vw, 96px);
+    font-size: clamp(24px, 4vw, 56px);
     line-height: .9;
     text-transform: uppercase;
 }
@@ -288,7 +292,7 @@ body.show-grid::before {
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-top: 16px;
-    color: var(--muted);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio-grid,
@@ -300,19 +304,21 @@ body.show-grid::before {
     width: 100%;
     max-width: 1080px;
     align-content: start;
+    min-width: 0;
 }
 
 .project-item {
     position: relative;
-    top: 50px;
+    top: 0;
     display: flex;
     flex-direction: column;
-    background: #f8f8f8;
+    background: var(--bg);
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 20px;
     padding-bottom: 8px;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
     transition: transform .4s ease, box-shadow .4s ease;
+    min-width: 0;
 }
 
 .project-item:hover {
@@ -326,11 +332,12 @@ body.show-grid::before {
     border-radius: 18px;
     margin: 16px 16px 0 16px;
     background: #111;
+    aspect-ratio: 16 / 10;
 }
 
 .project-media img {
     width: 100%;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
     display: block;
     transition: transform .6s ease;
@@ -361,6 +368,7 @@ body.show-grid::before {
     flex-direction: column;
     padding: 24px 28px 32px;
     gap: 16px;
+    min-width: 0;
 }
 
 .project-body h3 {
@@ -390,24 +398,68 @@ body.show-grid::before {
     font-weight: 600;
 }
 
+.project-placeholder {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
 .project-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     text-decoration: none;
     font-weight: 600;
-    color: #87A0BE;
-    margin-top: auto;
+    color: var(--fg);
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 100%;
+}
+
+.project-link span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .project-link i {
-    font-size: 14px;
+    font-size: 13px;
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.08);
     transition: transform .3s ease;
 }
 
 .project-link:hover i {
     transform: translate(2px, -2px);
     color: var(--link);
+}
+
+.project-link:hover {
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.14);
 }
 
 /* Footer */
@@ -435,7 +487,8 @@ body.show-grid::before {
 /* Responsive */
 @media (max-width:900px) {
     .hero {
-        grid-template-columns: 24px 1fr 2px
+        grid-template-columns: 24px 1fr 2px;
+        min-height: auto;
     }
 
 
@@ -451,10 +504,109 @@ body.show-grid::before {
     .projects {
         grid-template-columns: 1fr;
         gap: 32px;
-        padding: 48px 24px 80px;
+        padding: 32px 24px 72px;
     }
 
     .project-title {
         position: static;
     }
+
+    .portfolio-grid,
+    .project-grid {
+        grid-column: 1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .logo a {
+        font-size: 16px;
+        letter-spacing: 0.4px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 13px;
+        padding: 6px 10px;
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .hero {
+        display: block;
+        /* min-height: auto; */
+        max-height: fit-content;
+        padding: 24px 20px 16px;
+    }
+
+    .center {
+        grid-column: auto;
+        order: 1;
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    .title {
+        margin: 8px 0 12px 0;
+        font-size: clamp(36px, 12vw, 64px);
+    }
+
+    .copy {
+        margin: 8px 0 16px 0;
+        font-size: 15px;
+    }
+
+    .social {
+        gap: 10px;
+    }
+
+    .social a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .hero-image {
+        position: static;
+        display: block;
+        width: min(72vw, 320px);
+        height: min(44vh, 360px);
+        max-width: none;
+        margin: 16px 0 8px;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .bottom-right {
+        /* position: static;
+        order: 3;
+        margin-top: 6px;
+        font-size: clamp(20px, 9vw, 40px); */
+        display: none;
+    }
+
+    .projects {
+        padding: 24px 20px 64px;
+        gap: 24px;
+    }
+
+    .project-title {
+        font-size: clamp(28px, 10vw, 48px);
+    }
+
+    .project-item {
+        top: 0;
+    }
+
 }

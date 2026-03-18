@@ -34,19 +34,39 @@ if (projectsContainer) {
       .map(tag => `<span class="project-tag">${tag}</span>`)
       .join('');
 
+    const linkIcon = (label, url) => {
+      const text = (label || '').toLowerCase();
+      if (text.includes('github')) return 'fa-brands fa-github';
+      if (text.includes('demo') || text.includes('live')) return 'fa-solid fa-play';
+      if (text.includes('figma')) return 'fa-brands fa-figma';
+      if (text.includes('docs')) return 'fa-regular fa-file-lines';
+      if ((url || '').includes('linkedin.com')) return 'fa-brands fa-linkedin-in';
+      return 'fa-solid fa-arrow-up-right';
+    };
+
+    const linksMarkup = (item.links ?? [])
+      .map(link => `
+        <a href="${link.url}" target="_blank" rel="noreferrer noopener" class="project-link">
+          <i class="${linkIcon(link.label, link.url)}" aria-hidden="true"></i>
+          <span>${link.label}</span>
+        </a>
+      `)
+      .join('');
+
+    const mediaMarkup = item.thumbnail
+      ? `<img src="${item.thumbnail}" alt="${item.title}">`
+      : `<div class="project-placeholder" aria-hidden="true">Image coming soon</div>`;
+
     project.innerHTML = `
       <div class="project-media">
-        <img src="${item.thumbnail}" alt="${item.title}">
+        ${mediaMarkup}
         ${item.duration ? `<span class="project-duration">${item.duration}</span>` : ''}
       </div>
       <div class="project-body">
         <h3>${item.title}</h3>
         <p class="project-copy">${item.description}</p>
         ${tagsMarkup ? `<div class="project-tags">${tagsMarkup}</div>` : ''}
-        <a href="${item.link}" target="_blank" rel="noreferrer noopener" class="project-link">
-          <span>view project</span>
-          <i class="fa-solid fa-arrow-up-right"></i>
-        </a>
+        ${linksMarkup ? `<div class="project-links">${linksMarkup}</div>` : ''}
       </div>
     `;
     projectsContainer.appendChild(project);

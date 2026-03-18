@@ -1,4 +1,9 @@
 /* Portfolio grid layout */
+:root {
+    --bg: #d9d9d9;
+    --project-title: #2F2F2F;
+}
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -31,7 +36,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    color: #fff;
+    color: var(--bg);
     padding: 16px 20px;
     z-index: 1;
 }
