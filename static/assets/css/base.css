@@ -45,7 +45,8 @@ body.show-grid::before {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow-x: clip;
 }
 
 /* Header */
@@ -87,6 +88,7 @@ body.show-grid::before {
     text-decoration: none;
     font-weight: 600;
     border-radius: 999px;
+    padding: 10px 10px 10px 10px;
     font-family: "Helvetica", "Charter", system-ui, -apple-system, sans-serif
 }
 
@@ -337,7 +339,7 @@ body.show-grid::before {
     border-radius: 18px;
     margin: 16px 16px 0 16px;
     background: #111;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 21 / 9;
 }
 
 .project-media img {

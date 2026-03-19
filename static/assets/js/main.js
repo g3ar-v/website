@@ -38,6 +38,8 @@ if (projectsContainer) {
       const text = (label || '').toLowerCase();
       if (text.includes('github')) return 'fa-brands fa-github';
       if (text.includes('demo') || text.includes('live')) return 'fa-solid fa-play';
+      if (text.includes('instagram')) return 'fa-brands fa-instagram';
+      if (text.includes('twitter')) return 'fa-brands fa-x-twitter';
       if (text.includes('figma')) return 'fa-brands fa-figma';
       if (text.includes('docs')) return 'fa-regular fa-file-lines';
       if ((url || '').includes('linkedin.com')) return 'fa-brands fa-linkedin-in';
@@ -55,7 +57,7 @@ if (projectsContainer) {
 
     const mediaMarkup = item.thumbnail
       ? `<img src="${item.thumbnail}" alt="${item.title}">`
-      : `<div class="project-placeholder" aria-hidden="true">Image coming soon</div>`;
+      : `<div class="project-placeholder" aria-hidden="true">;)</div>`;
 
     project.innerHTML = `
       <div class="project-media">
