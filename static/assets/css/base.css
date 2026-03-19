@@ -3,7 +3,8 @@
     --bg: #d9d9d9;
     --fg: #2F2F2F;
     --muted: #6c6c6c;
-    --link: #bebebe;
+    /* --link: #bebebe; */
+    --link: #4f6a8f;
     --alternate-fg: #bebebe;
 }
 
@@ -305,6 +306,10 @@ body.show-grid::before {
     max-width: 1080px;
     align-content: start;
     min-width: 0;
+}
+
+.project-body {
+    color: var(--fg)
 }
 
 .project-item {

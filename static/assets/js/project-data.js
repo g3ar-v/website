@@ -7,8 +7,8 @@ const project_data = {
     description: 'A natural language interface that provides information offline/online with an event-driven design',
     links: [
       { label: 'GitHub', url: 'https://github.com/g3ar-v/vasco.git' },
-      { label: 'Voice to actions on macOS', url: 'https://x.com/victornyoyoko_/status/1697257433335533701?s=20' },
-      { label: 'Graphical Interface', url: 'https://x.com/victornyoyoko_/status/1750539598923452619?s=20 ' }
+      { label: 'Voice to actions on macOS demo', url: 'https://x.com/victornyoyoko_/status/1697257433335533701?s=20' },
+      { label: 'Graphical Interface demo', url: 'https://x.com/victornyoyoko_/status/1750539598923452619?s=20 ' }
     ]
   },
  
