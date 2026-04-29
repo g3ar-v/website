@@ -9,7 +9,7 @@ export function Products() {
         "Voice and text desktop automation tool — executes system commands and app interactions via natural language on macOS and Windows.",
       thumbnail:
         "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=80",
-      youtubeId: "dQw4w9WgXcQ", // TODO: replace with real video ID
+      youtubeId: "iPXBzHmu0Pg", // TODO: replace with real video ID
       tags: ["Python", "NLP", "macOS", "Computer Automation"],
       liveUrl: "#",
       githubUrl: "https://github.com/g3ar-v/Vasco",
