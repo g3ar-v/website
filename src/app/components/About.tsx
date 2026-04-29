@@ -74,8 +74,8 @@ export function About() {
               <h1 className="text-5xl font-bold text-[#2f2f2f] mb-6">About Me</h1>
               <p className="text-lg text-[#2f2f2f] mb-4">
                 I'm Victor Nyoyoko — a backend and systems engineer with a foundation in
-                networking and . I build the infrastructure and automation that keeps
-                networks running and engineers productive.
+                networking and software. I build the infrastructure and automation that
+                keeps networks running and customers productive.
               </p>
               <p className="text-lg text-[#2f2f2f] mb-4">
                 My foundation is rigorous: data structures, algorithms, and logic
