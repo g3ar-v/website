@@ -4,22 +4,31 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function About() {
   const skills = [
     {
-      category: "Backend & Automation",
-      items: ["Python", "Bash", "REST APIs", "PostgreSQL", "FastAPI"],
-    },
-    {
-      category: "Networking & Infrastructure",
+      category: "Software Engineering",
       items: [
-        "L2 Networking",
-        "NOC Operations",
-        "UptimeKuma",
-        "Monitoring",
-        "Incident Response",
+        "Algorithms & Data Structures",
+        "OOP & Software Engineering Practice",
+        "Functional Programming",
+        "Programming Languages",
       ],
     },
     {
-      category: "Tools & Platforms",
-      items: ["Git", "Linux", "macOS", "Windows", "Docker"],
+      category: "Systems & Infrastructure",
+      items: [
+        "Computer Networks & Operating Systems",
+        "Advanced Networking",
+        "Distributed Systems",
+        "Systems Programming in C/C++",
+      ],
+    },
+    {
+      category: "AI & Applied Computing",
+      items: [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Computer Vision",
+        "Real-World Systems Security",
+      ],
     },
   ];
 
@@ -64,19 +73,21 @@ export function About() {
             <div className="order-1 md:order-2">
               <h1 className="text-5xl font-bold text-[#2f2f2f] mb-6">About Me</h1>
               <p className="text-lg text-[#2f2f2f] mb-4">
-                I'm Victor Nyoyoko — a backend and platform engineer with a foundation
-                in networking and distributed systems. I build the infrastructure and
-                automation that keeps networks running and engineers productive.
+                I'm Victor Nyoyoko — a backend and systems engineer with a foundation in
+                networking and . I build the infrastructure and automation that keeps
+                networks running and engineers productive.
               </p>
               <p className="text-lg text-[#2f2f2f] mb-4">
-                My work spans network operations at ipNX Nigeria, where I maintained SLA
-                availability for 600+ enterprise customers and personal projects like
-                Vasco — a voice/text desktop automation tool. I care about designing
-                systems, clear thinking, and shipping things that actually work.
+                My foundation is rigorous: data structures, algorithms, and logic
+                underpin everything I build. I work across the stack — from low-level
+                C/C++ systems to high-level AI and machine learning solutions.
+                Real-world tradeoffs are familiar terrain: performance versus
+                correctness, security versus usability, scalability versus complexity.
+                I'm drawn to hard problems. I build to last.
               </p>
               <p className="text-lg text-[#2f2f2f]">
-                Based in Abuja, Nigeria. MEng Computer Science & Software Engineering
-                from the University of Birmingham. Open to remote roles and relocation.
+                Currently Based in Nigeria. MEng Computer Science & Software Engineering
+                from the University of Birmingham.
               </p>
             </div>
           </div>

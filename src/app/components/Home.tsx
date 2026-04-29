@@ -27,13 +27,12 @@ export function Home() {
                 NYOYOKO
               </h1>
               <p className="text-xl md:text-2xl text-[#2f2f2f] mb-8 leading-relaxed">
-                I build backend systems on a networking foundation.<br />
-                Reliable by default, not by luck.
+                I build backend systems. Reliable by default, not by luck.
               </p>
               <div className="flex gap-4">
                 <Link
                   to="/products"
-                  className="inline-flex items-center gap-2 bg-[#2f2f2f] text-white px-8 py-4 rounded-lg hover:bg-gray-500 transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#2f2f2f] text-white px-8 py-4 rounded-lg hover:bg-[#bebebe] transition-colors"
                 >
                   View My Work
                   <ArrowRight className="w-5 h-5" />
@@ -63,9 +62,12 @@ export function Home() {
 
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">What I Bring</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">
+              How I Think About Impact
+            </h2>
             <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-              A combination of technical expertise and creative problem-solving
+              I find leverage in complex systems — mapping actors, dependencies, and
+              incentive structures to move outcomes.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -74,11 +76,11 @@ export function Home() {
                 <Zap className="w-full h-full" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-[#292929]">
-                Fast & Efficient
+                Middleware & Systems
               </h3>
               <p className="text-[#292929] leading-relaxed">
-                Building performant solutions that scale with your needs, optimized for
-                speed and reliability
+                Built VASCO — AI-to-hardware middleware bridging LLMs to physical
+                systems via Raspberry Pi and osascript
               </p>
             </div>
             <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
@@ -86,11 +88,11 @@ export function Home() {
                 <Sparkles className="w-full h-full" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-[#292929]">
-                Modern Design
+                Network Engineering
               </h3>
               <p className="text-[#292929] leading-relaxed">
-                Creating beautiful interfaces with attention to detail, where form meets
-                function
+                Deep experience at ipNX in maintaining and deploying reliable network
+                infrastructure — systems that stay up by design
               </p>
             </div>
             <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
@@ -98,11 +100,10 @@ export function Home() {
                 <Target className="w-full h-full" strokeWidth={1.5} />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-[#292929]">
-                User-Focused
+                Systems Mapping
               </h3>
               <p className="text-[#292929] leading-relaxed">
-                Designing experiences that put users first, ensuring intuitive and
-                delightful interactions
+                Tracing dependencies, incentives, and actors to shift outcomes
               </p>
             </div>
           </div>
