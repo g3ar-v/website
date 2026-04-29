@@ -95,7 +95,7 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#f6f6f6]">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-[#2f2f2f] mb-12 text-center">
             What I Value

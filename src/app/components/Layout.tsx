@@ -17,25 +17,25 @@ export function Layout() {
             <div className="flex gap-8">
               <Link
                 to="/"
-                className="text-[#2f2f2f] hover:text-gray-900 transition-colors"
+                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
               >
                 Home
               </Link>
               <Link
                 to="/experience"
-                className="text-[#2f2f2f] hover:text-gray-900 transition-colors"
+                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
               >
                 Experience
               </Link>
               <Link
                 to="/products"
-                className="text-[#2f2f2f] hover:text-gray-900 transition-colors"
+                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
               >
                 Products
               </Link>
               <Link
                 to="/about"
-                className="text-[#2f2f2f] hover:text-gray-900 transition-colors"
+                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
               >
                 About
               </Link>
@@ -61,7 +61,7 @@ export function Layout() {
               </p>
               <a
                 href="mailto:vfranktor@gmail.com"
-                className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-500 transition-colors"
+                className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-[#bebebe] transition-colors"
               >
                 <Mail className="w-5 h-5" />
                 Contact Me

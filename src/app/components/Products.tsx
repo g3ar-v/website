@@ -61,7 +61,7 @@ export function Products() {
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+              className="bg-[#bebebe] border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
               <div className="aspect-video bg-gray-100 overflow-hidden">
                 <VideoThumbnail

@@ -71,7 +71,7 @@ export function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
+            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-[#bebebe] transition-all">
               <div className="w-12 h-12 mb-6 text-[#292929]">
                 <Zap className="w-full h-full" strokeWidth={1.5} />
               </div>
@@ -83,7 +83,7 @@ export function Home() {
                 systems via Raspberry Pi and osascript
               </p>
             </div>
-            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
+            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-[#bebebe] transition-all">
               <div className="w-12 h-12 mb-6 text-[#292929]">
                 <Sparkles className="w-full h-full" strokeWidth={1.5} />
               </div>
@@ -95,7 +95,7 @@ export function Home() {
                 infrastructure — systems that stay up by design
               </p>
             </div>
-            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-gray-900 transition-all">
+            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-[#bebebe] transition-all">
               <div className="w-12 h-12 mb-6 text-[#292929]">
                 <Target className="w-full h-full" strokeWidth={1.5} />
               </div>
