@@ -1,5 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { VideoThumbnail } from "./figma/VideoThumbnail";
 
 export function Products() {
   const products = [
@@ -7,8 +7,9 @@ export function Products() {
       title: "Vasco",
       description:
         "Voice and text desktop automation tool — executes system commands and app interactions via natural language on macOS and Windows.",
-      image:
+      thumbnail:
         "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=80",
+      youtubeId: "dQw4w9WgXcQ", // TODO: replace with real video ID
       tags: ["Python", "NLP", "macOS", "Computer Automation"],
       liveUrl: "#",
       githubUrl: "https://github.com/g3ar-v/Vasco",
@@ -17,8 +18,9 @@ export function Products() {
       title: "Network Provisioning Automation",
       description:
         "Automated provisioning checks, config validation, and log collection pipeline for ipNX enterprise/ISP network infrastructure.",
-      image:
+      thumbnail:
         "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80",
+      youtubeId: "dQw4w9WgXcQ", // TODO: replace with real video ID
       tags: ["Python", "Bash", "NOC", "Network Automation"],
       liveUrl: "#",
       githubUrl: "#",
@@ -27,8 +29,9 @@ export function Products() {
       title: "Attendance Monitoring System",
       description:
         "Automated attendance tracking system with face recognition and real-time reporting dashboard for institutional use.",
-      image:
+      thumbnail:
         "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&q=80",
+      youtubeId: "dQw4w9WgXcQ", // TODO: replace with real video ID
       tags: ["Python", "Computer Vision", "React", "PostgreSQL"],
       liveUrl: "#",
       githubUrl: "https://github.com/g3ar-v",
@@ -53,10 +56,11 @@ export function Products() {
               className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
             >
               <div className="aspect-video bg-gray-100 overflow-hidden">
-                <ImageWithFallback
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                <VideoThumbnail
+                  youtubeId={product.youtubeId}
+                  thumbnail={product.thumbnail}
+                  title={product.title}
+                  className="w-full h-full"
                 />
               </div>
               <div className="p-6">
