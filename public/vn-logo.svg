@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <title>vn logo</title>
+  <g>
+    <rect x="4" y="4.1" width="40" height="39.9" rx="2.9" ry="2.9" fill="#292929"/>
+    <text
+      x="23"
+      y="24"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="24"
+      font-weight="bold"
+      fill="#d9d9d9">
+      vn
+    </text>
+    <circle cx="39" cy="28" r="2" fill="#d9d9d9"/>
+  </g>
+</svg>
