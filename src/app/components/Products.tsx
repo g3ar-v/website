@@ -4,26 +4,21 @@ import { VideoThumbnail } from "./figma/VideoThumbnail";
 export function Products() {
   const products = [
     {
-      title: "Vasco",
+      title: "macOS voice to actions",
       description:
-        "Voice and text desktop automation tool — executes system commands and app interactions via natural language on macOS and Windows.",
-      thumbnail:
-        "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=80",
+        "A voice command which prompts the agent to perform actions on your computer.",
+      // thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=80",
       youtubeId: "iPXBzHmu0Pg", // TODO: replace with real video ID
       tags: ["Python", "NLP", "macOS", "Computer Automation"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/g3ar-v/Vasco",
+      // liveUrl: "#",
+      // githubUrl: "https://github.com/g3ar-v/Vasco",
     },
     {
-      title: "Network Provisioning Automation",
-      description:
-        "Automated provisioning checks, config validation, and log collection pipeline for ipNX enterprise/ISP network infrastructure.",
-      thumbnail:
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80",
-      youtubeId: "dQw4w9WgXcQ", // TODO: replace with real video ID
-      tags: ["Python", "Bash", "NOC", "Network Automation"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Respeaker light rings with voice and light feedback",
+      description: "",
+      youtubeId: "0tiOsWwmQKM", // TODO: replace with real video ID
+      tags: [],
+      githubUrl: "https://github.com/g3ar-v/respeaker-4mic-hat-skill.git",
     },
     {
       title: "Attendance Monitoring System",
@@ -35,6 +30,19 @@ export function Products() {
       tags: ["Python", "Computer Vision", "React", "PostgreSQL"],
       liveUrl: "#",
       githubUrl: "https://github.com/g3ar-v",
+    },
+    {
+      title: "Responsive carousel sections and resizable component on click",
+      description: "",
+      youtubeId: "Vb_HEg7Xlz0",
+      tags: [],
+    },
+    {
+      title: "Voice agent UI",
+      description:
+        "The notion here was to have an agent whose feedback response was to speak while also providing and updating data on UI. A major problem was the lag with the then TTS engine in processing text",
+      youtubeId: "2t2-ocBrqc0",
+      tags: [],
     },
   ];
 
@@ -79,20 +87,24 @@ export function Products() {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <a
-                    href={product.liveUrl}
-                    className="inline-flex items-center gap-1 text-sm text-[#2f2f2f] hover:text-gray-600 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </a>
-                  <a
-                    href={product.githubUrl}
-                    className="inline-flex items-center gap-1 text-sm text-[#2f2f2f] hover:text-gray-600 transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </a>
+                  {product.liveUrl ? (
+                    <a
+                      href={product.liveUrl}
+                      className="inline-flex items-center gap-1 text-sm text-[#2f2f2f] hover:text-gray-600 transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
+                  ) : null}
+                  {product.githubUrl ? (
+                    <a
+                      href={product.githubUrl}
+                      className="inline-flex items-center gap-1 text-sm text-[#2f2f2f] hover:text-gray-600 transition-colors"
+                    >
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </div>
