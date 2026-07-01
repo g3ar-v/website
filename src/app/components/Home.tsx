@@ -186,7 +186,7 @@ export function Home() {
                   </div>
                 </div>
                 <p className="text-[#2f2f2f] mb-4">{exp.description}</p>
-                <div className="flex flex-wrap gap-2">
+                {/*<div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
@@ -195,7 +195,7 @@ export function Home() {
                       {skill}
                     </span>
                   ))}
-                </div>
+                </div>*/}
               </div>
             ))}
           </div>
