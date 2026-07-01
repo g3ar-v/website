@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import { VideoThumbnail } from "./figma/VideoThumbnail";
 
-export function Products() {
+export function Work() {
   const products = [
     {
       title: "macOS voice to actions",
@@ -50,7 +50,7 @@ export function Products() {
     <div className="min-h-screen bg-[#d9d9d9] py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-[#2f2f2f] mb-4">Products</h1>
+          <h1 className="text-5xl font-bold text-[#2f2f2f] mb-4">Work</h1>
           <p className="text-xl text-[#2f2f2f]">
             Selected projects spanning network automation, voice AI, and developer
             tooling
@@ -71,12 +71,12 @@ export function Products() {
                   className="w-full h-full"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-4">
                 <h3 className="text-xl font-semibold text-[#2f2f2f] mb-2">
                   {product.title}
                 </h3>
                 <p className="text-[#2f2f2f] mb-4 text-sm">{product.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                {/*<div className="flex flex-wrap gap-2 mb-4">
                   {product.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
@@ -85,7 +85,7 @@ export function Products() {
                       {tag}
                     </span>
                   ))}
-                </div>
+                </div>*/}
                 <div className="flex gap-3">
                   {product.liveUrl ? (
                     <a

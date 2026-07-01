@@ -1,16 +1,71 @@
-import { ArrowRight, Zap, Sparkles, Target } from "lucide-react";
+import {
+  ArrowRight,
+  Zap,
+  Sparkles,
+  Target,
+  Briefcase,
+  Calendar,
+  Mail,
+} from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+
+const experiences = [
+  {
+    role: "Network Engineer — L2 Enterprise/ISP",
+    company: "ipNX Nigeria Limited",
+    period: "2025 – 2026",
+    description:
+      "Maintained L2 connectivity and SLA availability for 600+ enterprise and ISP customers. Acted as the technical bridge between internal teams and customer stakeholders — translating requirements, managing expectations, and ensuring alignment across both sides. Deployed and optimised point-to-point/point-to-multi-point microwave radio links (Cambium, Ubiquiti) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in UptimeKuma, reducing fault detection to under five minutes.",
+    skills: [
+      "Python",
+      "SolarWinds",
+      "UptimeKuma",
+      "L1/L2 Networking",
+      "Cambium",
+      "Ubiquiti",
+      "Microwave Radio",
+    ],
+  },
+];
+
+const skillGroups = [
+  {
+    category: "Software Engineering",
+    items: [
+      "Algorithms & Data Structures",
+      "OOP & Software Engineering Practice",
+      "Functional Programming",
+      "Programming Languages",
+    ],
+  },
+  {
+    category: "Systems & Infrastructure",
+    items: [
+      "Computer Networks & Operating Systems",
+      "Advanced Networking",
+      "Distributed Systems",
+      "Systems Programming in C/C++",
+    ],
+  },
+  {
+    category: "AI & Applied Computing",
+    items: [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "Real-World Systems Security",
+    ],
+  },
+];
 
 export function Home() {
   return (
     <div>
       {/* Hero Section */}
       <section className="relative overflow-visible">
-        {/* Content: portrait + name, z-10 above page background */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-0">
           <div className="flex items-center gap-10">
-            {/* Portrait — left side */}
             <div className="flex-shrink-0 hidden md:block">
               <img
                 src="/portrait.png"
@@ -18,30 +73,26 @@ export function Home() {
                 className="w-[412px] h-[512px] object-cover grayscale"
               />
             </div>
-
-            {/* Name + tagline + buttons */}
             <div className="text-[#2f2f2f]">
               <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
                 VICTOR
                 <br />
                 NYOYOKO
               </h1>
-              <p className="text-xl md:text-2xl text-[#2f2f2f] mb-8 leading-relaxed">
-                I build backend systems. Reliable by default, not by luck.
+              <p className="text-lg md:text-base text-[#2f2f2f] mb-8 leading-relaxed ">
+                I'm a systems engineer. Studied at the University of Birmingham, where I
+                lived and breathed Computer Science. I work across the stack. From
+                low-level C/C++ and network communications like cambium radios to
+                high-level AI and backend solutions. I have built projects spanning from
+                voice AI, human interfaces to developer tooling.
               </p>
               <div className="flex gap-4">
                 <Link
-                  to="/products"
+                  to="/work"
                   className="inline-flex items-center gap-2 bg-[#2f2f2f] text-white px-8 py-4 rounded-lg hover:bg-[#bebebe] transition-colors"
                 >
                   View My Work
                   <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  to="/about"
-                  className="inline-flex items-center gap-2 bg-transparent border-2 border-[#2f2f2f] text-[#2f2f2f] px-8 py-4 rounded-lg hover:bg-white/10 transition-colors"
-                >
-                  Learn More
                 </Link>
               </div>
             </div>
@@ -49,7 +100,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Featured Section — no portrait */}
+      {/* Impact Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gray-100">
           <ImageWithFallback
@@ -59,12 +110,9 @@ export function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30" />
         </div>
-
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              How I Think About Impact
-            </h2>
+            <h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>
             <p className="text-lg text-gray-200 max-w-2xl mx-auto">
               I find leverage in complex systems — mapping actors, dependencies, and
               incentive structures to move outcomes.
@@ -107,6 +155,67 @@ export function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-20 bg-[#d9d9d9]">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
+            Experience
+          </h2>
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <div
+                key={index}
+                className="bg-[#bebebe] rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-[#2f2f2f] mb-1">
+                      {exp.role}
+                    </h3>
+                    <div className="flex items-center gap-2 text-[#2f2f2f] mb-2">
+                      <Briefcase className="w-4 h-4" />
+                      <span>{exp.company}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 text-[#2f2f2f] mt-2 md:mt-0">
+                    <Calendar className="w-4 h-4" />
+                    <span>{exp.period}</span>
+                  </div>
+                </div>
+                <p className="text-[#2f2f2f] mb-4">{exp.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {exp.skills.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="px-3 py-1 bg-gray-100 text-[#2f2f2f] rounded-full text-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="py-20 bg-[#f6f6f6]">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-[#2f2f2f] mb-4">Get In Touch</h2>
+          <p className="text-lg text-[#2f2f2f] mb-8">
+            Systems engineer. Reach me at vfranktor@gmail.com or on LinkedIn.
+          </p>
+          <a
+            href="mailto:vfranktor@gmail.com"
+            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-[#bebebe] transition-colors text-lg"
+          >
+            <Mail className="w-5 h-5" />
+            Contact Me
+          </a>
         </div>
       </section>
     </div>

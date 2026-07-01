@@ -1,5 +1,5 @@
-import { Link, Outlet } from "react-router";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { NavLink, Link, Outlet } from "react-router";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export function Layout() {
   return (
@@ -15,30 +15,28 @@ export function Layout() {
               <img src="/vn-logo.svg" alt="VN Logo" className="h-10 w-10" />
             </Link>
             <div className="flex gap-8">
-              <Link
+              <NavLink
                 to="/"
-                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
+                className={({ isActive }) =>
+                  `px-2 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-[#2f2f2f] text-white"
+                      : "text-[#2f2f2f] hover:bg-[#bebebe]"
+                  }`}
               >
                 Home
-              </Link>
-              <Link
-                to="/experience"
-                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
+              </NavLink>
+              <NavLink
+                to="/work"
+                className={({ isActive }) =>
+                  `px-2 py-1 rounded-lg transition-colors ${
+                    isActive
+                      ? "bg-[#2f2f2f] text-white"
+                      : "text-[#2f2f2f] hover:bg-[#bebebe]"
+                  }`}
               >
-                Experience
-              </Link>
-              <Link
-                to="/products"
-                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
-              >
-                Products
-              </Link>
-              <Link
-                to="/about"
-                className="text-[#2f2f2f] hover:text-[#f6f6f6] transition-colors"
-              >
-                About
-              </Link>
+                Work
+              </NavLink>
             </div>
           </div>
         </div>
@@ -49,26 +47,12 @@ export function Layout() {
         <Outlet />
       </main>
 
-      {/* Contact Footer */}
-      <footer className="bg-gray-100  border-t border-gray-200">
+      {/* Footer */}
+      <footer className="bg-gray-100 border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex justify-center mb-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Get In Touch</h3>
-              <p className="text-[#2f2f2f] mb-6">
-                Backend and platform engineer. Reach me at vfranktor@gmail.com or on
-                LinkedIn.
-              </p>
-              <a
-                href="mailto:vfranktor@gmail.com"
-                className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-[#bebebe] transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-                Contact Me
-              </a>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold mb-4">Connect</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center">Connect</h3>
               <div className="flex gap-4">
                 <a
                   href="https://github.com/g3ar-v"
@@ -100,7 +84,7 @@ export function Layout() {
               </div>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-[#2f2f2f]">
+          <div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f]">
             <p>&copy; 2026 Victor Nyoyoko. All rights reserved.</p>
           </div>
         </div>
