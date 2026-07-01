@@ -16,7 +16,7 @@ const experiences = [
     company: "ipNX Nigeria Limited",
     period: "2025 – 2026",
     description:
-      "Maintained L2 connectivity and SLA availability for 600+ enterprise and ISP customers. Acted as the technical bridge between internal teams and customer stakeholders — translating requirements, managing expectations, and ensuring alignment across both sides. Deployed and optimised point-to-point/point-to-multi-point microwave radio links (Cambium, Ubiquiti) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in UptimeKuma, reducing fault detection to under five minutes.",
+      "Maintained Layer 2 connectivity and SLA availability for 600+ enterprise customers by troubleshooting and resolving network links, deploying and optimising point-to-point/point-to-multi-point microwave radio links (Cambium, Ubiquiti) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in UptimeKuma, reducing fault detection time.",
     skills: [
       "Python",
       "SolarWinds",
@@ -199,23 +199,6 @@ export function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Contact CTA */}
-      <section className="py-20 bg-[#f6f6f6]">
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-[#2f2f2f] mb-4">Get In Touch</h2>
-          <p className="text-lg text-[#2f2f2f] mb-8">
-            Systems engineer. Reach me at vfranktor@gmail.com or on LinkedIn.
-          </p>
-          <a
-            href="mailto:vfranktor@gmail.com"
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-[#bebebe] transition-colors text-lg"
-          >
-            <Mail className="w-5 h-5" />
-            Contact Me
-          </a>
         </div>
       </section>
     </div>

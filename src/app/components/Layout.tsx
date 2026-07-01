@@ -1,5 +1,5 @@
 import { NavLink, Link, Outlet } from "react-router";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export function Layout() {
   return (
@@ -22,7 +22,8 @@ export function Layout() {
                     isActive
                       ? "bg-[#2f2f2f] text-white"
                       : "text-[#2f2f2f] hover:bg-[#bebebe]"
-                  }`}
+                  }`
+                }
               >
                 Home
               </NavLink>
@@ -33,7 +34,8 @@ export function Layout() {
                     isActive
                       ? "bg-[#2f2f2f] text-white"
                       : "text-[#2f2f2f] hover:bg-[#bebebe]"
-                  }`}
+                  }`
+                }
               >
                 Work
               </NavLink>
@@ -49,44 +51,53 @@ export function Layout() {
 
       {/* Footer */}
       <footer className="bg-gray-100 border-t border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="flex justify-center mb-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-4 text-center">Connect</h3>
-              <div className="flex gap-4">
-                <a
-                  href="https://github.com/g3ar-v"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
-                  aria-label="GitHub"
-                >
-                  <Github className="w-6 h-6" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/victorn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a
-                  href="https://x.com/victorn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="w-6 h-6" />
-                </a>
+        <div className="flex pt-8">
+          <div className="max-w-6xl mx-auto px-6 py-12">
+            <div className="flex justify-center mb-8">
+              <div>
+                <h3 className="text-2xl font-semibold mb-4 text-center">Connect</h3>
+                <div className="flex gap-4">
+                  <a
+                    href="https://github.com/g3ar-v"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    aria-label="GitHub"
+                  >
+                    <Github className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/victorn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://x.com/victorn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    aria-label="Twitter"
+                  >
+                    <Twitter className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="mailto:vfranktor@gmail.com"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    aria-label="Email"
+                  >
+                    <Mail className="w-6 h-6" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f]">
-            <p>&copy; 2026 Victor Nyoyoko. All rights reserved.</p>
-          </div>
+        </div>
+        <div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f] max-w-2/3 mx-auto pb-8">
+          <p>&copy; 2026 Victor Nyoyoko. All rights reserved.</p>
         </div>
       </footer>
     </div>
