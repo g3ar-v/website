@@ -1,9 +1,10 @@
 {
-  "name": "@figma/my-make-file",
+  "name": "victor-portfolio",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "dev": "vite dev",
     "build": "vite build"
   },
   "dependencies": {
