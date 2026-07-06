@@ -21,17 +21,6 @@ export function Work() {
       githubUrl: "https://github.com/g3ar-v/respeaker-4mic-hat-skill.git",
     },
     {
-      title: "Attendance Monitoring System",
-      description:
-        "Automated attendance tracking system with face recognition and real-time reporting dashboard for institutional use.",
-      thumbnail:
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop&q=80",
-      youtubeId: "dQw4w9WgXcQ", // TODO: replace with real video ID
-      tags: ["Python", "Computer Vision", "React", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/g3ar-v",
-    },
-    {
       title: "Responsive carousel sections and resizable component on click",
       description: "",
       youtubeId: "Vb_HEg7Xlz0",
@@ -47,14 +36,14 @@ export function Work() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#d9d9d9] py-20">
+    <div className="min-h-screen  py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-[#2f2f2f] mb-4">Work</h1>
-          <p className="text-xl text-[#2f2f2f]">
+          {/*<p className="text-xl text-[#2f2f2f]">
             Selected projects spanning network automation, voice AI, and developer
             tooling
-          </p>
+          </p>*/}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

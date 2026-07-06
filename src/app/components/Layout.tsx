@@ -7,22 +7,18 @@ export function Layout() {
       {/* Navigation */}
       <nav
         className="sticky top-0 backdrop-blur-sm border-b border-gray-300/50 z-50"
-        style={{ backgroundColor: "rgba(217,217,217,0.9)" }}
+        style={{ backgroundColor: "#f2f2f2" }}
       >
-        <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src="/vn-logo.svg" alt="VN Logo" className="h-10 w-10" />
+              <img src="/vn-logo.svg" alt="VN Logo" className="h-20 w-20" />
             </Link>
             <div className="flex gap-8">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `px-2 py-1 rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-[#2f2f2f] text-white"
-                      : "text-[#2f2f2f] hover:bg-[#bebebe]"
-                  }`
+                  `px-2 py-1 rounded-lg transition-colors border-2 ${isActive ? "border-[#2f2f2f]" : "border-transparent hover:border-[#bebebe]"}`
                 }
               >
                 Home
@@ -30,11 +26,7 @@ export function Layout() {
               <NavLink
                 to="/work"
                 className={({ isActive }) =>
-                  `px-2 py-1 rounded-lg transition-colors ${
-                    isActive
-                      ? "bg-[#2f2f2f] text-white"
-                      : "text-[#2f2f2f] hover:bg-[#bebebe]"
-                  }`
+                  `px-2 py-1 rounded-lg transition-colors border-2 ${isActive ? "border-[#2f2f2f]" : "border-transparent hover:border-[#bebebe]"}`
                 }
               >
                 Work
@@ -50,7 +42,7 @@ export function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-100 border-t border-gray-200">
+      <footer className=" border-t border-gray-200">
         <div className="flex pt-8">
           <div className="max-w-6xl mx-auto px-6 py-12">
             <div className="flex justify-center mb-8">

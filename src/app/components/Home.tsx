@@ -64,7 +64,7 @@ export function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative overflow-visible">
-        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-0">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-8 md:pb-16">
           <div className="flex items-center gap-10">
             <div className="flex-shrink-0 hidden md:block">
               <img
@@ -76,12 +76,11 @@ export function Home() {
             <div className="text-[#2f2f2f]">
               <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
                 VICTOR
-                <br />
-                NYOYOKO
+                <br></br>NYOYOKO
               </h1>
-              <p className="text-lg md:text-base text-[#2f2f2f] mb-8 leading-relaxed ">
-                I'm a systems engineer. Studied at the University of Birmingham, where I
-                lived and breathed Computer Science. I work across the stack. From
+              <p className="text-lg md:text-base text-[#7d7d7d] mb-8 leading-relaxed font-semibold">
+                I am a systems engineer. Studied at the University of Birmingham, where
+                I lived and breathed Computer Science. I work across the stack. From
                 low-level C/C++ and network communications like cambium radios to
                 high-level AI and backend solutions. I have built projects spanning from
                 voice AI, human interfaces to developer tooling.
@@ -112,7 +111,7 @@ export function Home() {
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>
+            {/*<h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>*/}
             <p className="text-lg text-gray-200 max-w-2xl mx-auto">
               I find leverage in complex systems — mapping actors, dependencies, and
               incentive structures to move outcomes.
@@ -159,11 +158,11 @@ export function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 bg-[#d9d9d9]">
+      <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
+          {/*<h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
             Experience
-          </h2>
+          </h2>*/}
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div
