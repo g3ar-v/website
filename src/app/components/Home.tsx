@@ -64,7 +64,7 @@ export function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative overflow-visible">
-        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-8 md:pb-16">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-16 md:pb-0">
           <div className="flex items-center gap-10">
             <div className="flex-shrink-0 hidden md:block">
               <img
