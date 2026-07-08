@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Calendar } from "lucide-react";
 import { VideoThumbnail } from "./figma/VideoThumbnail";
 
 export function Work() {
@@ -12,6 +12,7 @@ export function Work() {
       tags: ["Python", "NLP", "macOS", "Computer Automation"],
       // liveUrl: "#",
       // githubUrl: "https://github.com/g3ar-v/Vasco",
+      date: "2024",
     },
     {
       title: "AI light feedback",
@@ -19,12 +20,14 @@ export function Work() {
       youtubeId: "0tiOsWwmQKM", // TODO: replace with real video ID
       tags: [],
       githubUrl: "https://github.com/g3ar-v/respeaker-4mic-hat-skill.git",
+      date: "2023",
     },
     {
       title: "Responsive carousel sections and resizable component on click",
       description: "",
       youtubeId: "Vb_HEg7Xlz0",
       tags: [],
+      date: "2024",
     },
     {
       title: "Voice agent UI",
@@ -32,6 +35,7 @@ export function Work() {
         "The notion here was to have an agent whose feedback response was to speak while also providing and updating data on UI. A major problem was the lag with the then TTS engine in processing text",
       youtubeId: "2t2-ocBrqc0",
       tags: [],
+      date: "2023",
     },
     {
       title: "SwiftUI ephemeral chat for AI agents",
@@ -39,6 +43,7 @@ export function Work() {
         "An ephemeral chat capsule, that supports visual context from macOS UI to be used to query an agent to act",
       youtubeId: "PTgpPBFD6U4",
       tags: [],
+      date: "2024",
     },
   ];
 
@@ -68,21 +73,27 @@ export function Work() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-[#2f2f2f] mb-2">
-                  {product.title}
-                </h3>
-                <p className="text-[#2f2f2f] mb-4 text-sm">{product.description}</p>
-                {/*<div className="flex flex-wrap gap-2 mb-4">
-                  {product.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-2 py-1 bg-gray-100 text-[#2f2f2f] rounded text-xs"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>*/}
-                <div className="flex gap-3">
+                              <h3 className="text-xl font-semibold text-[#2f2f2f] mb-2">
+                                {product.title}
+                              </h3>
+                              <p className="text-[#2f2f2f] mb-4 text-sm">{product.description}</p>
+                              {product.date && (
+                                <div className="flex items-center gap-1 text-sm text-[#7d7d7d] mb-4">
+                                  <Calendar className="w-3.5 h-3.5" />
+                                  <span>{product.date}</span>
+                                </div>
+                              )}
+                              {/*<div className="flex flex-wrap gap-2 mb-4">
+                                {product.tags.map((tag, tagIndex) => (
+                                  <span
+                                    key={tagIndex}
+                                    className="px-2 py-1 bg-gray-100 text-[#2f2f2f] rounded text-xs"
+                                  >
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>*/}
+                              <div className="flex gap-3">
                   {product.liveUrl ? (
                     <a
                       href={product.liveUrl}
