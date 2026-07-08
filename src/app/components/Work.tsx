@@ -14,8 +14,8 @@ export function Work() {
       // githubUrl: "https://github.com/g3ar-v/Vasco",
     },
     {
-      title: "Respeaker light rings with voice and light feedback",
-      description: "",
+      title: "AI light feedback",
+      description: "This is a light feeback for a 1 minute timer",
       youtubeId: "0tiOsWwmQKM", // TODO: replace with real video ID
       tags: [],
       githubUrl: "https://github.com/g3ar-v/respeaker-4mic-hat-skill.git",
@@ -31,6 +31,13 @@ export function Work() {
       description:
         "The notion here was to have an agent whose feedback response was to speak while also providing and updating data on UI. A major problem was the lag with the then TTS engine in processing text",
       youtubeId: "2t2-ocBrqc0",
+      tags: [],
+    },
+    {
+      title: "SwiftUI ephemeral chat for AI agents",
+      description:
+        "An ephemeral chat capsule, that supports visual context from macOS UI to be used to query an agent to act",
+      youtubeId: "PTgpPBFD6U4",
       tags: [],
     },
   ];
