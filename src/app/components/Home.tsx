@@ -27,6 +27,23 @@ const experiences = [
       "Microwave Radio",
     ],
   },
+  {
+    role: "Systems Engineer",
+    company: "Akxston",
+    period: "2023 – 2025",
+    description:
+      "Built and operated core backend infrastructure for a Nigerian fintech platform processing high-volume transactions. Designed scalable APIs, implemented event-driven architectures with Kafka, and optimised PostgreSQL query performance for sub-100ms p99 latency. Automated deployment pipelines and observability stacks (Prometheus, Grafana, Loki) across cloud and on-prem environments. Led incident response for payment-critical systems.",
+    skills: [
+      "Go",
+      "PostgreSQL",
+      "Kafka",
+      "Kubernetes",
+      "Prometheus",
+      "Grafana",
+      "Distributed Systems",
+      "Payments",
+    ],
+  },
 ];
 
 const skillGroups = [

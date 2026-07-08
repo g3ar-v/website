@@ -12,7 +12,7 @@ export function Layout() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src="/vn-logo.svg" alt="VN Logo" className="h-20 w-20" />
+              <img src="/vn-logo.svg" alt="VN Logo" className="h-16 w-16" />
             </Link>
             <div className="flex gap-8">
               <NavLink
