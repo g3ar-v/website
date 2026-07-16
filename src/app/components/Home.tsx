@@ -116,11 +116,16 @@ export function Home() {
                 <br></br>NYOYOKO
               </h1>
               <p className="text-lg md:text-base text-[#7d7d7d] mb-8 leading-relaxed font-semibold">
-                I am a systems engineer. Studied at the University of Birmingham, where
-                I lived and breathed Computer Science. I work across the stack. From
-                low-level C/C++ and network communications like cambium radios to
-                high-level AI and backend solutions. I have built projects spanning from
-                voice AI, human interfaces to developer tooling.
+                I am a <span className="text-[#2f2f2f]">systems engineer</span>. Studied at the{" "}
+                <span className="text-[#2f2f2f]">University of Birmingham</span>, where I lived and
+                breathed <span className="text-[#2f2f2f]">Computer Science</span>. I work across the
+                stack. From low-level <span className="text-[#2f2f2f]">C/C++</span> and network
+                communications like <span className="text-[#2f2f2f]">cambium radios</span> to
+                high-level <span className="text-[#2f2f2f]">AI</span> and{" "}
+                <span className="text-[#2f2f2f]">backend solutions</span>. I have built projects
+                spanning from <span className="text-[#2f2f2f]">voice AI</span>,{" "}
+                <span className="text-[#2f2f2f]">human interfaces</span> to{" "}
+                <span className="text-[#2f2f2f]">developer tooling</span>.
               </p>
               <div className="flex gap-4">
                 <Link
