@@ -125,7 +125,7 @@ export function Home() {
               <div className="flex gap-4">
                 <Link
                   to="/work"
-                  className="inline-flex items-center gap-2 bg-[#2f2f2f] text-white px-8 py-4 rounded-lg hover:bg-[#bebebe] transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#2f2f2f] border-2 text-white px-8 py-4 rounded-pill hover:bg-[#f2f2f2] hover:text-[#2f2f2f] hover:border-[#2f2f2f] transition-colors"
                 >
                   View My Work
                   <ArrowRight className="w-5 h-5" />

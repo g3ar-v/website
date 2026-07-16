@@ -26,7 +26,7 @@ export function Layout() {
               <NavLink
                 to="/work"
                 className={({ isActive }) =>
-                  `px-2 py-1 rounded-lg transition-colors border-2 ${isActive ? "border-[#2f2f2f]" : "border-transparent hover:border-[#bebebe]"}`
+                  `px-5 py-1 rounded-pill transition-colors border-2 ${isActive ? "bg-[#2f2f2f] text-background" : " border-transparent hover:bg-[#bebebe] text-[#2f2f2f]"}`
                 }
               >
                 Work
