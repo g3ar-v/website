@@ -3,20 +3,37 @@ import {
   Zap,
   Sparkles,
   Target,
-  Briefcase,
-  Calendar,
   Mail,
 } from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./ui/accordion";
 
 const experiences = [
   {
-    role: "Network Engineer — L2 Enterprise/ISP",
+      role: "Fullstack Engineer",
+      company: "Akxston",
+      period: "2026",
+      description: (
+        <>
+          Built and deployed the <span className="text-[#2f2f2f] font-semibold">Akxston website</span> end to end; <span className="text-[#2f2f2f] font-semibold">design, domain, hosting</span>. Currently leading the development of <span className="text-[#2f2f2f] font-semibold">Top Artisan</span>, a marketplace for local artisans to meet their desired clients and vice versa
+        </>
+      ),
+    },
+  {
+    role: "Network Engineer",
     company: "ipNX Nigeria Limited",
     period: "2025 – 2026",
-    description:
-      "Maintained Layer 2 connectivity and SLA availability for 600+ enterprise customers by troubleshooting and resolving network links, deploying and optimising point-to-point/point-to-multi-point microwave radio links (Cambium, Ubiquiti) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in UptimeKuma, reducing fault detection time.",
+    description: (
+      <>
+        Maintained Layer 2 connectivity for <span className="text-[#2f2f2f] font-semibold">600+ enterprise customers in Abuja by liasing with their network teams to troubleshoot and resolve network links</span>. Deploying and optimising point-to-point/point-to-multi-point microwave radio links (<span className="text-[#2f2f2f] font-semibold">Cambium, Ubiquiti</span>) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in <span className="text-[#2f2f2f] font-semibold">UptimeKuma</span>, reducing fault detection time.
+      </>
+    ),
     skills: [
       "Python",
       "SolarWinds",
@@ -28,11 +45,14 @@ const experiences = [
     ],
   },
   {
-    role: "Systems Engineer",
-    company: "Akxston",
-    period: "2023 – 2025",
-    description:
-      "Built and operated core backend infrastructure for a Nigerian fintech platform processing high-volume transactions. Designed scalable APIs, implemented event-driven architectures with Kafka, and optimised PostgreSQL query performance for sub-100ms p99 latency. Automated deployment pipelines and observability stacks (Prometheus, Grafana, Loki) across cloud and on-prem environments. Led incident response for payment-critical systems.",
+    role: "Freelance Software Developer",
+    company: "fiverr",
+    period: "2022 – 2024",
+    description: (
+      <>
+        <span className="text-[#2f2f2f] font-semibold">Troubleshooting codebases</span>. Engagements ranged from <span className="text-[#2f2f2f] font-semibold">automating internal workflows</span> and <span className="text-[#2f2f2f] font-semibold">integrating third-party services</span> to shipping production sites, <span className="text-[#2f2f2f] font-semibold">with direct client communication on scope, delivery and iteration</span>
+      </>
+    ),
     skills: [
       "Go",
       "PostgreSQL",
@@ -180,40 +200,29 @@ export function Home() {
           {/*<h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
             Experience
           </h2>*/}
-          <div className="space-y-8">
-            {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="bg-[#bebebe] rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-semibold text-[#2f2f2f] mb-1">
-                      {exp.role}
-                    </h3>
-                    <div className="flex items-center gap-2 text-[#2f2f2f] mb-2">
-                      <Briefcase className="w-4 h-4" />
-                      <span>{exp.company}</span>
+          <div className="rounded-xl border border-white bg-[#f2f2f2] px-2">
+            <Accordion type="single" collapsible defaultValue="item-0">
+              {experiences.map((exp, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger>
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-4 w-full">
+                      <div>
+                        <span className="text-[#2f2f2f] font-semibold">
+                          {exp.role}
+                        </span>
+                        <span className="text-[#494949] md:ml-2">
+                          · {exp.company}
+                        </span>
+                      </div>
+                      <span className="text-[#717182] text-sm md:text-base">
+                        {exp.period}
+                      </span>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-2 text-[#2f2f2f] mt-2 md:mt-0">
-                    <Calendar className="w-4 h-4" />
-                    <span>{exp.period}</span>
-                  </div>
-                </div>
-                <p className="text-[#2f2f2f] mb-4">{exp.description}</p>
-                {/*<div className="flex flex-wrap gap-2">
-                  {exp.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="px-3 py-1 bg-gray-100 text-[#2f2f2f] rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>*/}
-              </div>
-            ))}
+                  </AccordionTrigger>
+                  <AccordionContent>{exp.description}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
