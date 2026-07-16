@@ -12,7 +12,7 @@ export function Work() {
       tags: ["Python", "NLP", "macOS", "Computer Automation"],
       // liveUrl: "#",
       // githubUrl: "https://github.com/g3ar-v/Vasco",
-      date: "2024",
+      date: "2023",
     },
     {
       title: "AI light feedback",
@@ -43,8 +43,36 @@ export function Work() {
         "An ephemeral chat capsule, that supports visual context from macOS UI to be used to query an agent to act",
       youtubeId: "PTgpPBFD6U4",
       tags: [],
-      date: "2024",
+      date: "2026",
     },
+    {
+      title: "Concurrent voice and light feedback on hardware",
+      description: "",
+      youtubeId: "9gGjfX51C7U",
+      tags: [],
+      date: "2026",
+    },
+    {
+      title: "Conversations with voice agent",
+      description: "",
+      youtubeId: "q25TCyh1s1k",
+      tags: [],
+      date: "2023",
+    },
+    {
+      title: "Artisan UI/UX",
+      description: "",
+      youtubeId: "zl9_yTFbw2A",
+      tags: [],
+      date: "2026",
+    },
+    {
+          title: "Top Artisan SignIn flow",
+          description: "",
+          youtubeId: "f-IYT2Fnerc",
+          tags: [],
+          date: "2026",
+        }
   ];
 
   return (
@@ -73,17 +101,17 @@ export function Work() {
                 />
               </div>
               <div className="p-4">
-                              <h3 className="text-xl font-semibold text-[#2f2f2f] mb-2">
-                                {product.title}
-                              </h3>
-                              <p className="text-[#2f2f2f] mb-4 text-sm">{product.description}</p>
-                              {product.date && (
-                                <div className="flex items-center gap-1 text-sm text-[#7d7d7d] mb-4">
-                                  <Calendar className="w-3.5 h-3.5" />
-                                  <span>{product.date}</span>
-                                </div>
-                              )}
-                              {/*<div className="flex flex-wrap gap-2 mb-4">
+                <h3 className="text-xl font-semibold text-[#2f2f2f] mb-2">
+                  {product.title}
+                </h3>
+                <p className="text-[#2f2f2f] mb-4 text-sm">{product.description}</p>
+                {product.date && (
+                  <div className="flex items-center gap-1 text-sm text-[#7d7d7d] mb-4">
+                    <Calendar className="w-3.5 h-3.5" />
+                    <span>{product.date}</span>
+                  </div>
+                )}
+                {/*<div className="flex flex-wrap gap-2 mb-4">
                                 {product.tags.map((tag, tagIndex) => (
                                   <span
                                     key={tagIndex}
@@ -93,7 +121,7 @@ export function Work() {
                                   </span>
                                 ))}
                               </div>*/}
-                              <div className="flex gap-3">
+                <div className="flex gap-3">
                   {product.liveUrl ? (
                     <a
                       href={product.liveUrl}
