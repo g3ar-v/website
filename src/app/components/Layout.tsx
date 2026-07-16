@@ -12,13 +12,13 @@ export function Layout() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src="/vn-logo.svg" alt="VN Logo" className="h-16 w-16" />
+              <img src="/vn-logo.svg" alt="VN Logo" className="h-14 w-14" />
             </Link>
             <div className="flex gap-8">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `px-2 py-1 rounded-lg transition-colors border-2 ${isActive ? "border-[#2f2f2f]" : "border-transparent hover:border-[#bebebe]"}`
+                  `px-5 py-1 rounded-pill transition-colors border-2 ${isActive ? "bg-[#2f2f2f] text-background" : "border-transparent hover:bg-[#bebebe] text-[#2f2f2f]"}`
                 }
               >
                 Home
