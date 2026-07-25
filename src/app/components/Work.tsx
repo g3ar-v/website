@@ -8,16 +8,16 @@ export function Work() {
       description:
         "A voice command which prompts the agent to perform actions on your computer.",
       // thumbnail: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop&q=80",
-      youtubeId: "iPXBzHmu0Pg", // TODO: replace with real video ID
+      youtubeId: "iPXBzHmu0Pg",
       tags: ["Python", "NLP", "macOS", "Computer Automation"],
       // liveUrl: "#",
       // githubUrl: "https://github.com/g3ar-v/Vasco",
       date: "2023",
     },
     {
-      title: "AI light feedback",
-      description: "This is a light feeback for a 1 minute timer",
-      youtubeId: "0tiOsWwmQKM", // TODO: replace with real video ID
+      title: "LED feedback for a timer",
+      description: "A light feeback for a 1 minute timer",
+      youtubeId: "0tiOsWwmQKM",
       tags: [],
       githubUrl: "https://github.com/g3ar-v/respeaker-4mic-hat-skill.git",
       date: "2023",
@@ -40,7 +40,7 @@ export function Work() {
     {
       title: "SwiftUI ephemeral chat for AI agents",
       description:
-        "An ephemeral chat capsule, that supports visual context from macOS UI to be used to query an agent to act",
+        "An ephemeral chat capsule, that supports visual context from macOS UI to be used to query an agent",
       youtubeId: "PTgpPBFD6U4",
       tags: [],
       date: "2026",
@@ -86,7 +86,7 @@ export function Work() {
           </p>*/}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1">
           {products.map((product, index) => (
             <div
               key={index}
