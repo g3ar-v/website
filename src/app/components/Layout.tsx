@@ -14,11 +14,11 @@ export function Layout() {
             <Link to="/" className="flex items-center">
               <img src="/vn-logo.svg" alt="VN Logo" className="h-14 w-14" />
             </Link>
-            <div className="flex gap-8">
+            <div className="flex gap-4">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `px-5 py-1 rounded-pill transition-colors border-2 ${isActive ? "bg-[#2f2f2f] text-background" : "border-transparent hover:bg-[#bebebe] text-[#2f2f2f]"}`
+                  `px-3 rounded-pill transition-colors border-2 ${isActive ? "bg-[#2f2f2f] text-background" : "border-transparent hover:bg-[#bebebe] text-[#2f2f2f]"}`
                 }
               >
                 Home
@@ -26,7 +26,7 @@ export function Layout() {
               <NavLink
                 to="/work"
                 className={({ isActive }) =>
-                  `px-5 py-1 rounded-pill transition-colors border-2 ${isActive ? "bg-[#2f2f2f] text-background" : " border-transparent hover:bg-[#bebebe] text-[#2f2f2f]"}`
+                  `px-3 rounded-pill transition-colors border-2 ${isActive ? "bg-[#2f2f2f] text-background" : " border-transparent hover:bg-[#bebebe] text-[#2f2f2f]"}`
                 }
               >
                 Work
@@ -88,7 +88,7 @@ export function Layout() {
             </div>
           </div>
         </div>
-        <div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f] max-w-2/3 mx-auto pb-8">
+        <div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f] max-w-2/3 mx-auto pb-4 text-sm">
           <p>&copy; 2026 Victor Nyoyoko. All rights reserved.</p>
         </div>
       </footer>
