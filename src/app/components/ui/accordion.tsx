@@ -62,7 +62,7 @@ function AccordionContent({
       className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-base"
       {...props}
     >
-      <div className={cn("py-2 px-6 text-[#494949] leading-relaxed bg-[#f8f8f8] border-4 border-r-16 border-[#f2f2f2]", className)}>
+      <div className={cn("py-4 px-4 text-[#494949] leading-relaxed border-t-1 border-[#b8b8b8]", className)}>
         {children}
       </div>
     </AccordionPrimitive.Content>
