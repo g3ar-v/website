@@ -107,7 +107,7 @@ export function Home() {
               <img
                 src="/portrait.png"
                 alt="Victor Nyoyoko"
-                className="w-[412px] h-[512px] object-cover grayscale"
+                className="w-[472px] h-[512px] object-cover grayscale"
               />
             </div>
             <div className="text-[#2f2f2f]">
@@ -130,7 +130,7 @@ export function Home() {
               <div className="flex gap-4">
                 <Link
                   to="/work"
-                  className="inline-flex items-center gap-2 bg-[#2f2f2f] border-2 text-white px-8 py-4 rounded-pill hover:bg-[#f2f2f2] hover:text-[#2f2f2f] hover:border-[#2f2f2f] transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#2f2f2f] border-2 text-white px-4 py-2 rounded-pill hover:bg-[#f2f2f2] hover:text-[#2f2f2f] hover:border-[#2f2f2f] transition-colors"
                 >
                   View My Work
                   <ArrowRight className="w-5 h-5" />
@@ -143,13 +143,8 @@ export function Home() {
 
       {/* Impact Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gray-100">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=1920&h=1080&fit=crop&q=80"
-            alt="Section background"
-            className="w-full h-full object-cover grayscale"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30" />
+        <div className="absolute inset-0 bg-[#2f2f2f]">
+          {/*<div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />*/}
         </div>
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
@@ -205,7 +200,7 @@ export function Home() {
           {/*<h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
             Experience
           </h2>*/}
-          <div className="rounded-xl border border-white bg-[#f2f2f2] px-2">
+          <div className="rounded-xl border border-[#bebebe] bg-[#f2f2f2] px-2">
             <Accordion type="single" collapsible defaultValue="item-0">
               {experiences.map((exp, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
