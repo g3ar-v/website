@@ -156,7 +156,7 @@ export function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group relative p-8 rounded-lg overflow-hidden">
-              <img src="/halftone-purple.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60" />
+              <img src="/impact-middleware.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="relative text-white">
                 <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
