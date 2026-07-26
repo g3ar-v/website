@@ -157,7 +157,7 @@ export function Home() {
           <div className="grid md:grid-cols-4 gap-4">
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-middleware.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
                           <p className="leading-relaxed">
@@ -167,18 +167,18 @@ export function Home() {
                       </div>
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-network.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Network Engineering</h3>
                           <p className="leading-relaxed">
-                            Deep experience at ipNX in maintaining and deploying reliable network
-                            infrastructure — systems that stay up by design
+                            Deep experience in maintaining, optimising and deploying reliable network
+                            infrastructure: systems that stay up by design
                           </p>
                         </div>
                       </div>
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-human.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Human Relations</h3>
                           <p className="leading-relaxed">
@@ -188,7 +188,7 @@ export function Home() {
                       </div>
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-design.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Design</h3>
                           <p className="leading-relaxed">
