@@ -155,39 +155,39 @@ export function Home() {
             </p>*/}
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group relative p-8 rounded-lg overflow-hidden">
-              <img src="/impact-middleware.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-              <div className="relative text-white">
-                <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
-                <p className="leading-relaxed">
-                  Built VASCO — AI-to-hardware middleware bridging LLMs to physical
-                  systems via Raspberry Pi and osascript
-                </p>
-              </div>
-            </div>
-            <div className="group relative p-8 rounded-lg overflow-hidden">
-              <img src="/halftone-orange.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-              <div className="relative text-white">
-                <h3 className="text-2xl font-semibold mb-3">Network Engineering</h3>
-                <p className="leading-relaxed">
-                  Deep experience at ipNX in maintaining and deploying reliable network
-                  infrastructure — systems that stay up by design
-                </p>
-              </div>
-            </div>
-            <div className="group relative p-8 rounded-lg overflow-hidden">
-              <img src="/halftone-green.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-              <div className="relative text-white">
-                <h3 className="text-2xl font-semibold mb-3">Human Relations</h3>
-                <p className="leading-relaxed">
-                  I see technology as a tool. A tool to facilitate human connection.
-                </p>
-              </div>
-            </div>
-          </div>
+                      <div className="group relative p-8 rounded-lg overflow-hidden">
+                        <img src="/impact-middleware.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="relative text-white">
+                          <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
+                          <p className="leading-relaxed">
+                            Built VASCO — AI-to-hardware middleware bridging LLMs to physical
+                            systems via Raspberry Pi and osascript
+                          </p>
+                        </div>
+                      </div>
+                      <div className="group relative p-8 rounded-lg overflow-hidden">
+                        <img src="/impact-network.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="relative text-white">
+                          <h3 className="text-2xl font-semibold mb-3">Network Engineering</h3>
+                          <p className="leading-relaxed">
+                            Deep experience at ipNX in maintaining and deploying reliable network
+                            infrastructure — systems that stay up by design
+                          </p>
+                        </div>
+                      </div>
+                      <div className="group relative p-8 rounded-lg overflow-hidden">
+                        <img src="/impact-human.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="relative text-white">
+                          <h3 className="text-2xl font-semibold mb-3">Human Relations</h3>
+                          <p className="leading-relaxed">
+                            I see technology as a tool. A tool to facilitate human connection.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
         </div>
       </section>
 
