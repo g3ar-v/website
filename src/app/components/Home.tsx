@@ -192,9 +192,10 @@ export function Home() {
                   <Target className="w-full h-full" strokeWidth={1.5} />
                 </div>*/}
                 <h3 className="text-2xl font-semibold mb-3 text-[#22c55e]">
-                  Systems Mapping
+                  Human relations
                 </h3>
                 <p className="text-[#166534] leading-relaxed">
+                  I see technology as a tool. A tool to facilitate human connection. My experiences and education has provided me with the platform to
                   Tracing dependencies, incentives, and actors to shift outcomes
                 </p>
               </div>
