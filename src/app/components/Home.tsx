@@ -149,46 +149,55 @@ export function Home() {
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             {/*<h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>*/}
-            <p className="text-lg text-gray-200 max-w-2xl mx-auto">
+            {/*<p className="text-lg text-gray-200 max-w-2xl mx-auto">
               I find leverage in complex systems — mapping actors, dependencies, and
               incentive structures to move outcomes.
-            </p>
+            </p>*/}
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-[#bebebe] transition-all">
-              <div className="w-12 h-12 mb-6 text-[#292929]">
-                <Zap className="w-full h-full" strokeWidth={1.5} />
+            <div className="group relative p-8 rounded-lg bg-white overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(139,92,246,0.15)_2px,transparent_0)] bg-[size:16px_16px]" />
+              <div className="relative">
+                {/*<div className="w-12 h-12 mb-6 text-[#8b5cf6]">
+                  <Zap className="w-full h-full" strokeWidth={1.5} />
+                </div>*/}
+                <h3 className="text-2xl font-semibold mb-3 text-[#8b5cf6]">
+                  Middleware & Systems
+                </h3>
+                <p className="text-[#4c1d95] leading-relaxed">
+                  Built VASCO — AI-to-hardware middleware bridging LLMs to physical
+                  systems via Raspberry Pi and osascript
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-[#292929]">
-                Middleware & Systems
-              </h3>
-              <p className="text-[#292929] leading-relaxed">
-                Built VASCO — AI-to-hardware middleware bridging LLMs to physical
-                systems via Raspberry Pi and osascript
-              </p>
             </div>
-            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-[#bebebe] transition-all">
-              <div className="w-12 h-12 mb-6 text-[#292929]">
-                <Sparkles className="w-full h-full" strokeWidth={1.5} />
+            <div className="group relative p-8 rounded-lg bg-white overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(249,115,22,0.15)_2px,transparent_0)] bg-[size:16px_16px]" />
+              <div className="relative">
+                {/*<div className="w-12 h-12 mb-6 text-[#f97316]">
+                  <Sparkles className="w-full h-full" strokeWidth={1.5} />
+                </div>*/}
+                <h3 className="text-2xl font-semibold mb-3 text-[#f97316]">
+                  Network Engineering
+                </h3>
+                <p className="text-[#9a3412] leading-relaxed">
+                  Deep experience at ipNX in maintaining and deploying reliable network
+                  infrastructure — systems that stay up by design
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-[#292929]">
-                Network Engineering
-              </h3>
-              <p className="text-[#292929] leading-relaxed">
-                Deep experience at ipNX in maintaining and deploying reliable network
-                infrastructure — systems that stay up by design
-              </p>
             </div>
-            <div className="group bg-[#bebebe] p-8 rounded-lg border border-gray-200 hover:border-[#bebebe] transition-all">
-              <div className="w-12 h-12 mb-6 text-[#292929]">
-                <Target className="w-full h-full" strokeWidth={1.5} />
+            <div className="group relative p-8 rounded-lg bg-white overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(34,197,94,0.15)_2px,transparent_0)] bg-[size:16px_16px]" />
+              <div className="relative">
+                {/*<div className="w-12 h-12 mb-6 text-[#22c55e]">
+                  <Target className="w-full h-full" strokeWidth={1.5} />
+                </div>*/}
+                <h3 className="text-2xl font-semibold mb-3 text-[#22c55e]">
+                  Systems Mapping
+                </h3>
+                <p className="text-[#166534] leading-relaxed">
+                  Tracing dependencies, incentives, and actors to shift outcomes
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-[#292929]">
-                Systems Mapping
-              </h3>
-              <p className="text-[#292929] leading-relaxed">
-                Tracing dependencies, incentives, and actors to shift outcomes
-              </p>
             </div>
           </div>
         </div>
@@ -197,9 +206,9 @@ export function Home() {
       {/* Experience Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6">
-          {/*<h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
+          <h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
             Experience
-          </h2>*/}
+          </h2>
           <div className="rounded-xl border border-[#bebebe] bg-[#f2f2f2] px-2">
             <Accordion type="single" collapsible defaultValue="item-0">
               {experiences.map((exp, index) => (
