@@ -143,10 +143,10 @@ export function Home() {
 
       {/* Impact Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[#2f2f2f]">
+        <div className="absolute inset-0 bg-[#0f1f1f]">
           {/*<div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />*/}
         </div>
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 mx-auto px-6">
           <div className="text-center mb-12">
             {/*<h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>*/}
             {/*<p className="text-lg text-gray-200 max-w-2xl mx-auto">
@@ -154,22 +154,21 @@ export function Home() {
               incentive structures to move outcomes.
             </p>*/}
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-                      <div className="group relative p-8 rounded-lg overflow-hidden">
+          <div className="grid md:grid-cols-4 gap-4">
+                      <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-middleware.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                        <div className="relative text-white">
+                        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
                           <p className="leading-relaxed">
-                            Built VASCO — AI-to-hardware middleware bridging LLMs to physical
-                            systems via Raspberry Pi and osascript
+                            Built VASCO — AI-to-hardware middleware bridging LLMs.
                           </p>
                         </div>
                       </div>
-                      <div className="group relative p-8 rounded-lg overflow-hidden">
-                        <img src="/impact-network.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                      <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
+                        <img src="/impact-network.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                        <div className="relative text-white">
+                        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Network Engineering</h3>
                           <p className="leading-relaxed">
                             Deep experience at ipNX in maintaining and deploying reliable network
@@ -177,13 +176,23 @@ export function Home() {
                           </p>
                         </div>
                       </div>
-                      <div className="group relative p-8 rounded-lg overflow-hidden">
-                        <img src="/impact-human.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                      <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
+                        <img src="/impact-human.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                        <div className="relative text-white">
+                        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Human Relations</h3>
                           <p className="leading-relaxed">
-                            I see technology as a tool. A tool to facilitate human connection.
+                            I see technology as a tool. A tool to facilitate human connection. My experiences have provided me with the platform to hone my understanding of what clients want.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
+                        <img src="/impact-design.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                        <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                          <h3 className="text-2xl font-semibold mb-3">Design</h3>
+                          <p className="leading-relaxed">
+                            Design is identification.
                           </p>
                         </div>
                       </div>
