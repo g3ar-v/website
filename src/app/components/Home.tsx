@@ -155,48 +155,35 @@ export function Home() {
             </p>*/}
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group relative p-8 rounded-lg bg-white overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(139,92,246,0.15)_2px,transparent_0)] bg-[size:16px_16px]" />
-              <div className="relative">
-                {/*<div className="w-12 h-12 mb-6 text-[#8b5cf6]">
-                  <Zap className="w-full h-full" strokeWidth={1.5} />
-                </div>*/}
-                <h3 className="text-2xl font-semibold mb-3 text-[#8b5cf6]">
-                  Middleware & Systems
-                </h3>
-                <p className="text-[#4c1d95] leading-relaxed">
+            <div className="group relative p-8 rounded-lg overflow-hidden">
+              <img src="/halftone-purple.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="relative text-white">
+                <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
+                <p className="leading-relaxed">
                   Built VASCO — AI-to-hardware middleware bridging LLMs to physical
                   systems via Raspberry Pi and osascript
                 </p>
               </div>
             </div>
-            <div className="group relative p-8 rounded-lg bg-white overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(249,115,22,0.15)_2px,transparent_0)] bg-[size:16px_16px]" />
-              <div className="relative">
-                {/*<div className="w-12 h-12 mb-6 text-[#f97316]">
-                  <Sparkles className="w-full h-full" strokeWidth={1.5} />
-                </div>*/}
-                <h3 className="text-2xl font-semibold mb-3 text-[#f97316]">
-                  Network Engineering
-                </h3>
-                <p className="text-[#9a3412] leading-relaxed">
+            <div className="group relative p-8 rounded-lg overflow-hidden">
+              <img src="/halftone-orange.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="relative text-white">
+                <h3 className="text-2xl font-semibold mb-3">Network Engineering</h3>
+                <p className="leading-relaxed">
                   Deep experience at ipNX in maintaining and deploying reliable network
                   infrastructure — systems that stay up by design
                 </p>
               </div>
             </div>
-            <div className="group relative p-8 rounded-lg bg-white overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(34,197,94,0.15)_2px,transparent_0)] bg-[size:16px_16px]" />
-              <div className="relative">
-                {/*<div className="w-12 h-12 mb-6 text-[#22c55e]">
-                  <Target className="w-full h-full" strokeWidth={1.5} />
-                </div>*/}
-                <h3 className="text-2xl font-semibold mb-3 text-[#22c55e]">
-                  Human relations
-                </h3>
-                <p className="text-[#166534] leading-relaxed">
-                  I see technology as a tool. A tool to facilitate human connection. My experiences and education has provided me with the platform to
-                  Tracing dependencies, incentives, and actors to shift outcomes
+            <div className="group relative p-8 rounded-lg overflow-hidden">
+              <img src="/halftone-green.png" alt="" className="absolute inset-0 w-full h-full object-cover opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="relative text-white">
+                <h3 className="text-2xl font-semibold mb-3">Human Relations</h3>
+                <p className="leading-relaxed">
+                  I see technology as a tool. A tool to facilitate human connection.
                 </p>
               </div>
             </div>
