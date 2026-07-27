@@ -143,7 +143,7 @@ export function Home() {
 
       {/* Impact Section */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[#0f1f1f]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_br,#7f1d1d,#1f0000)]" />
         <div className="relative z-10 mx-auto px-6">
           <div className="text-center mb-12">
             {/*<h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>*/}
