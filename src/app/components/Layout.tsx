@@ -53,7 +53,7 @@ export function Layout() {
                     href="https://github.com/g3ar-v"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-[#2f2f2f] hover:text-white hover:border-[#2f2f2f] transition-colors text-gray-700"
                     aria-label="GitHub"
                   >
                     <Github className="w-6 h-6" />
@@ -62,7 +62,7 @@ export function Layout() {
                     href="https://linkedin.com/in/victorn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-[#2f2f2f] hover:text-white hover:border-[#2f2f2f] transition-colors text-gray-700"
                     aria-label="LinkedIn"
                   >
                     <Linkedin className="w-6 h-6" />
@@ -71,14 +71,14 @@ export function Layout() {
                     href="https://x.com/victorn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-[#2f2f2f] hover:text-white hover:border-[#2f2f2f] transition-colors text-gray-700"
                     aria-label="Twitter"
                   >
                     <Twitter className="w-6 h-6" />
                   </a>
                   <a
                     href="mailto:vfranktor@gmail.com"
-                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors text-gray-700"
+                    className="w-12 h-12 bg-white border border-gray-300 rounded-lg flex items-center justify-center hover:bg-[#2f2f2f] hover:text-white hover:border-[#2f2f2f] transition-colors text-gray-700"
                     aria-label="Email"
                   >
                     <Mail className="w-6 h-6" />
