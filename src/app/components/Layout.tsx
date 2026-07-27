@@ -12,7 +12,7 @@ export function Layout() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img src="/vn-logo.svg" alt="VN Logo" className="h-14 w-14" />
+              <img src="/vn-logo.svg" alt="VN Logo" className="h-12 w-12" />
             </Link>
             <div className="flex gap-4">
               <NavLink
@@ -88,9 +88,9 @@ export function Layout() {
             </div>
           </div>
         </div>
-        <div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f] max-w-2/3 mx-auto pb-4 text-sm">
+        {/*<div className="pt-8 border-t border-gray-800 text-center text-[#2f2f2f] max-w-2/3 mx-auto pb-4 text-sm">
           <p>&copy; 2026 Victor Nyoyoko. All rights reserved.</p>
-        </div>
+        </div>*/}
       </footer>
     </div>
   );
