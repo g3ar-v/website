@@ -124,8 +124,8 @@ export function Home() {
                 high-level <span className="text-[#2f2f2f]">AI</span> and{" "}
                 <span className="text-[#2f2f2f]">backend solutions</span>. I have built projects
                 spanning from <span className="text-[#2f2f2f]">voice AI</span>,{" "}
-                <span className="text-[#2f2f2f]">human interfaces</span> to{" "}
-                <span className="text-[#2f2f2f]">developer tooling</span>.
+                <span className="text-[#2f2f2f]">designing human interfaces</span> to{" "}
+                <span className="text-[#2f2f2f]">developer tooling</span>. I have an emerging presence in the applications of electronics and hardware.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -144,7 +144,6 @@ export function Home() {
       {/* Impact Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-[#0f1f1f]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
         <div className="relative z-10 mx-auto px-6">
           <div className="text-center mb-12">
             {/*<h2 className="text-4xl font-bold text-white mb-4">How I Think</h2>*/}
@@ -156,7 +155,7 @@ export function Home() {
           <div className="grid md:grid-cols-4 gap-4">
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-middleware.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
+                        <div className="absolute inset-0" />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Middleware & Systems</h3>
                           <p className="leading-relaxed">
@@ -165,8 +164,8 @@ export function Home() {
                         </div>
                       </div>
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
-                        <img src="/impact-network.jpeg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
+                        <img src="/impact-network.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0" />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Network Engineering</h3>
                           <p className="leading-relaxed">
@@ -177,7 +176,7 @@ export function Home() {
                       </div>
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-human.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
+                        <div className="absolute inset-0 " />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Human Relations</h3>
                           <p className="leading-relaxed">
@@ -187,7 +186,7 @@ export function Home() {
                       </div>
                       <div className="group relative p-8 rounded-lg overflow-hidden min-h-[480px]">
                         <img src="/impact-design.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-[linear-gradient(to_br,rgba(0,0,0,0.6),rgba(0,0,0,0.15),rgba(0,0,0,0.6))]" />
+                        <div className="absolute inset-0 " />
                         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                           <h3 className="text-2xl font-semibold mb-3">Design</h3>
                           <p className="leading-relaxed">
