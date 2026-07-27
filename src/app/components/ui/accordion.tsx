@@ -21,7 +21,7 @@ function AccordionItem({
     <AccordionPrimitive.Item
       data-slot="accordion-item"
       className={cn(
-        "border-b border-[#b8b8b8] last:border-b-0",
+        "border-b border-[#d8d8d8] last:border-b-0",
         className,
       )}
       {...props}
@@ -62,7 +62,7 @@ function AccordionContent({
       className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-base"
       {...props}
     >
-      <div className={cn("py-4 px-4 text-[#494949] leading-relaxed border-t-1 border-[#d8d8d8]", className)}>
+      <div className={cn("py-4 px-4 text-[#f2f2f2] leading-relaxed border-t-1 border-[#595959]", className)}>
         {children}
       </div>
     </AccordionPrimitive.Content>

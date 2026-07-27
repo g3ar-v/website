@@ -23,6 +23,9 @@ importers:
       '@mui/material':
         specifier: 7.3.5
         version: 7.3.5(@emotion/react@11.14.0(@types/react@19.2.14)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.14)(react@18.3.1))(@types/react@19.2.14)(react@18.3.1))(@types/react@19.2.14)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@paper-design/shaders-react':
+        specifier: ^0.0.78
+        version: 0.0.78(@types/react@19.2.14)(react@18.3.1)
       '@popperjs/core':
         specifier: 2.11.8
         version: 2.11.8
@@ -623,6 +626,18 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  '@paper-design/shaders-react@0.0.78':
+    resolution: {integrity: sha512-qA3LsErxiUDHTJNGCsoPqCiqUpWG024ean9GYP+fqk0ewxAgf8QfsZnajq/T2DMUvxCfVFfRm1Kzt6IGBUHOBw==}
+    peerDependencies:
+      '@types/react': ^18 || ^19
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@paper-design/shaders@0.0.78':
+    resolution: {integrity: sha512-xOxV7koSzzh47G34I7uE3MASzli28k6+V35dlVrjMu270SFs0t8zeb4F/XTUU0BOXoHqIjKiGu6DnqkxPlsTcw==}
 
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
@@ -2770,6 +2785,15 @@ snapshots:
       react-is: 19.2.5
     optionalDependencies:
       '@types/react': 19.2.14
+
+  '@paper-design/shaders-react@0.0.78(@types/react@19.2.14)(react@18.3.1)':
+    dependencies:
+      '@paper-design/shaders': 0.0.78
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 19.2.14
+
+  '@paper-design/shaders@0.0.78': {}
 
   '@popperjs/core@2.11.8': {}
 

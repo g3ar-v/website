@@ -6,6 +6,7 @@ import {
   Mail,
 } from "lucide-react";
 import { Link } from "react-router";
+import { GrainGradient } from "@paper-design/shaders-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import {
   Accordion,
@@ -21,7 +22,7 @@ const experiences = [
       period: "2026",
       description: (
         <>
-          Built and deployed the <span className="text-[#2f2f2f] font-semibold">Akxston website</span> end to end; <span className="text-[#2f2f2f] font-semibold">design, domain, hosting</span>. Currently leading the development of <span className="text-[#2f2f2f] font-semibold">Top Artisan</span>, a marketplace for local artisans to meet their desired clients and vice versa
+          Built and deployed the <span className="text-[#f1f1f1] font-semibold">Akxston website</span> end to end; <span className="text-[#f1f1f1] font-semibold">design, domain, hosting</span>. Currently leading the development of <span className="text-[#f1f1f1] font-semibold">Top Artisan</span>, a marketplace for local artisans to meet their desired clients and vice versa
         </>
       ),
     },
@@ -31,7 +32,7 @@ const experiences = [
     period: "2025 – 2026",
     description: (
       <>
-        Maintained Layer 2 connectivity for <span className="text-[#2f2f2f] font-semibold">600+ enterprise customers in Abuja by liasing with their network teams to troubleshoot and resolve network links</span>. Deploying and optimising point-to-point/point-to-multi-point microwave radio links (<span className="text-[#2f2f2f] font-semibold">Cambium, Ubiquiti</span>) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in <span className="text-[#2f2f2f] font-semibold">UptimeKuma</span>, reducing fault detection time.
+        Maintained Layer 2 connectivity for <span className="text-[#f1f1f1] font-semibold">600+ enterprise customers in Abuja by liasing with their network teams to troubleshoot and resolve network links</span>. Deploying and optimising point-to-point/point-to-multi-point microwave radio links (<span className="text-[#f1f1f1] font-semibold">Cambium, Ubiquiti</span>) for last-mile connectivity, tuning for throughput and latency. Built monitoring dashboards in <span className="text-[#f1f1f1] font-semibold">UptimeKuma</span>, reducing fault detection time.
       </>
     ),
     skills: [
@@ -50,7 +51,7 @@ const experiences = [
     period: "2022 – 2024",
     description: (
       <>
-        <span className="text-[#2f2f2f] font-semibold">Troubleshooting codebases</span>. Engagements ranged from <span className="text-[#2f2f2f] font-semibold">automating internal workflows</span> and <span className="text-[#2f2f2f] font-semibold">integrating third-party services</span> to shipping production sites, <span className="text-[#2f2f2f] font-semibold">with direct client communication on scope, delivery and iteration</span>
+        <span className="text-[#f1f1f1] font-semibold">Troubleshooting codebases</span>. Engagements ranged from <span className="text-[#f1f1f1] font-semibold">automating internal workflows</span> and <span className="text-[#f1f1f1] font-semibold">integrating third-party services</span> to shipping production sites, <span className="text-[#f1f1f1] font-semibold">with direct client communication on scope, delivery and iteration</span>
       </>
     ),
     skills: [
@@ -199,26 +200,41 @@ export function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-[#2f2f2f] mb-12 text-center">
+      <section className="relative py-20 overflow-hidden min-h-[700px]">
+        <div className="absolute inset-0" />
+        <GrainGradient
+          className="pointer-events-none absolute inset-0 h-full w-full"
+          colors={["#0f1f1f", "#a49c74"]}
+          colorBack="#1f1f1f"
+          softness={0.5}
+          intensity={0.5}
+          noise={0.25}
+          shape="blob"
+          speed={1}
+          scale={1}
+          rotation={92}
+          offsetX={0.02}
+        />
+        {/*<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.55),transparent_55%)]" />*/}
+        <div className="relative z-10 mx-auto flex h-full max-w-4xl flex-col px-6 pt-5 pb-5 gap-20">
+          <h2 className="text-4xl font-bold text-[#f2f2f2] mb-12 text-center">
             Experience
           </h2>
-          <div className="rounded-xl border border-[#bebebe] bg-[#f2f2f2] px-2">
+          <div className="mt-auto rounded-xl border border-[#2f2f2f] backdrop-blur-lg px-2 shadow-[0_20px_60px_rgba(47,47,47,0.08)]">
             <Accordion type="single" collapsible defaultValue="item-0">
               {experiences.map((exp, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
                   <AccordionTrigger>
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-4 w-full">
                       <div>
-                        <span className="text-[#2f2f2f] font-semibold">
+                        <span className="text-[#f2f2f2] font-semibold">
                           {exp.role}
                         </span>
-                        <span className="text-[#494949] md:ml-2">
+                        <span className="text-[#d8d8d8] md:ml-2">
                           · {exp.company}
                         </span>
                       </div>
-                      <span className="text-[#717182] text-sm md:text-base">
+                      <span className="text-[#f3f3f3] text-sm md:text-base">
                         {exp.period}
                       </span>
                     </div>
